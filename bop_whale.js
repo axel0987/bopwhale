@@ -6,7 +6,7 @@ const {Market} = require('@project-serum/serum');
 var fs = require('fs');
 
 // Discord bot ID
-client.login('ODQ4NTQzNzgyMzc4MTQzNzQ0.YLOJ-g.yNZ4OdoqPga2KE-dWzpg7tDaCrk'); // change here
+client.login('ODUxMzM0ODA4NDUzMTIwMDYx.YL2xUw.atJAxqQ1q9o0y5sHbm3OoEwaseU'); // change here
 let channelid = "848187371404918834";
 
 let connection = new Connection('https://api.mainnet.rpcpool.com/');
