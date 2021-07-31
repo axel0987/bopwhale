@@ -1,4 +1,4 @@
-// AXVEEZ.COM
+// AXELLAB#7337
 const {Discord, Guild, Client, Channel, GuildMemberManager} = require('discord.js');
 const client = new Client();
 const {Account, Connection, PublicKey} = require('@solana/web3.js');
