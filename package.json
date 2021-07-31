@@ -1,7 +1,7 @@
 {
-  "name": "bop-price",
+  "name": "whalebopp",
   "version": "1.0.0",
-  "description": "BOP Price",
+  "description": "whalebopp",
   "main": "index.js",
   "scripts": {
     "test": "node index.js",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/eko733/botprice.git"
+    "url": "git+https://github.com/eko733/whalebopp.git"
   },
   "author": "rizal_crypto",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/eko733/botprice/issues"
+    "url": "https://github.com/eko733/whalebopp/issues"
   },
-  "homepage": "https://github.com/eko733/botprice#readme",
+  "homepage": "https://github.com/eko733/whalebopp#readme",
   "dependencies": {
     "@project-serum/serum": "^0.13.54",
     "@solana/web3.js": "^1.22.0",
