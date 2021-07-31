@@ -55,7 +55,7 @@ async function getTrade() {
               // NOthing here
             }else{
 
-              bigorder.push(`🔥   @langsidd#3455 Big Trade Alert! someone ${text_side} ${parseFloat(fill.size)} $BOP @${fill.price}`);
+              bigorder.push(`🔥  ' @langsidd#3455 ' Big Trade Alert! someone ${text_side} ${parseFloat(fill.size)} $BOP @${fill.price}`);
               arr_donepost.push(`${fill.orderId}`)
               console.log(fill.eventFlags)
             }
