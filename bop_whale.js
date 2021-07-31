@@ -1,4 +1,4 @@
-/*MADE BY AXVEEZ*/
+/*MADE BY AXELLAB/
 const {Discord, Guild, Client, Channel, GuildMemberManager} = require('discord.js');
 const client = new Client();
 const {Account, Connection, PublicKey} = require('@solana/web3.js');
@@ -6,15 +6,15 @@ const {Market} = require('@project-serum/serum');
 var fs = require('fs');
 
 // Discord bot ID
-client.login('ODQ4NTQzNzgyMzc4MTQzNzQ0.YLOJ-g.yNZ4OdoqPga2KE-dWzpg7tDaCrk'); // change here
-let channelid = "848187371404918834";
+client.login('ODUxMzM0ODA4NDUzMTIwMDYx.YL2xUw.atJAxqQ1q9o0y5sHbm3OoEwaseU'); // change here
+let channelid = "869334881140871188";
 
 let connection = new Connection('https://api.mainnet.rpcpool.com/');
 let programId = new PublicKey('9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin'); // Serum program v3
 // Serum Market ID
 let marketAddress = new PublicKey('7MmPwD1K56DthW14P1PnWZ4zPCbPWemGs3YggcT1KzsM'); //NINJA MARKET
 
-let treshold = "10000";
+let treshold = "1000";
 let arr_donepost = Array();
 
 
