@@ -27,7 +27,7 @@ client.on('ready', async () => {
         // console.log(val)
         client.channels.cache.get(`${channelid}`).send(`${val}`)
     }
-  }, 10000);
+  }, 1000);
 
 
 
