@@ -1,0 +1,25 @@
+{
+  "name": "bop-price",
+  "version": "1.0.0",
+  "description": "BOP Price",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eko733/botprice.git"
+  },
+  "author": "rizal_crypto",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eko733/botprice/issues"
+  },
+  "homepage": "https://github.com/eko733/botprice#readme",
+  "dependencies": {
+    "@project-serum/serum": "^0.13.54",
+    "@solana/web3.js": "^1.22.0",
+    "discord.js": "^12.5.3"
+  }
+}
