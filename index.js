@@ -1,4 +1,4 @@
-/*MADE BY AXVEEZ*/
+/*MADE BY AXELLAB*/
 const {Discord, Guild, Client, Channel, GuildMemberManager} = require('discord.js');
 const client = new Client();
 const {Account, Connection, PublicKey} = require('@solana/web3.js');
