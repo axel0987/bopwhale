@@ -4,7 +4,7 @@ const client = new Client();
 const {Account, Connection, PublicKey} = require('@solana/web3.js');
 const {Market} = require('@project-serum/serum');
 
-client.login('O'); // change here
+client.login(process.env.BOTID) ; // change here
 
 let connection = new Connection('https://api.mainnet-beta.solana.com/');
 let programId = new PublicKey('9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin'); // Serum program v3
