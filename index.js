@@ -7,14 +7,14 @@ var fs = require('fs');
 
 // Discord bot ID
 client.login(process.env.BOTID); // change here
-let channelid = "848187371404918834";
+let channelid = "869334881140871188";
 
 let connection = new Connection('https://api.mainnet.rpcpool.com/');
 let programId = new PublicKey('9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin'); // Serum program v3
 // Serum Market ID
 let marketAddress = new PublicKey('7MmPwD1K56DthW14P1PnWZ4zPCbPWemGs3YggcT1KzsM'); //NINJA MARKET
 
-let treshold = "10000";
+let treshold = "1000";
 let arr_donepost = Array();
 
 
@@ -27,7 +27,7 @@ client.on('ready', async () => {
         // console.log(val)
         client.channels.cache.get(`${channelid}`).send(`${val}`)
     }
-  }, 10000);
+  }, 1000);
 
 
 
