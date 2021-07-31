@@ -1,1 +1,1 @@
-worker: node index.js
+worker: node bop_whale.js
