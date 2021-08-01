@@ -42,7 +42,7 @@ async function getTrade() {
     for (let fill of fills) {
       if (fill.eventFlags.bid==true) {
         if (fill.eventFlags.maker==false) {
-          text_side ="BUY"
+          text_side ="!"
           side = "buy"
         }else{
           text_side ="Sell"
@@ -54,7 +54,7 @@ async function getTrade() {
               // NOthing here
             }else{
 
-              bigorder.push(`🔥  <@!599148963261710347> Ada yang beli bop! ayo ${text_side} ${parseFloat(fill.size)} $BOP @${fill.price}`);
+              bigorder.push(`🔥  <@!599148963261710347> Ada yang beli bop!${text_side} ${parseFloat(fill.size)} $BOP @${fill.price}USDC`);
               arr_donepost.push(`${fill.orderId}`)
               console.log(fill.eventFlags)
             }
