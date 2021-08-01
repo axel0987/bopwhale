@@ -54,7 +54,7 @@ async function getTrade() {
               // NOthing here
             }else{
 
-              bigorder.push(`🔥  <@!599148963261710347> Ada yang beli bop! someone ${text_side} ${parseFloat(fill.size)} $BOP @${fill.price}`);
+              bigorder.push(`🔥  <@!599148963261710347> Ada yang beli bop! someone "#54f278" ${text_side} ${parseFloat(fill.size)} $BOP @${fill.price}`);
               arr_donepost.push(`${fill.orderId}`)
               console.log(fill.eventFlags)
             }
