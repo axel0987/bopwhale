@@ -54,7 +54,7 @@ async function getTrade() {
               // NOthing here
             }else{
 
-              bigorder.push(`🔥  <@everyone> Ada yang beli!${text_side} ${parseFloat(fill.size)} $BOP || tunggu pump baru beli 😂 https://link.dana.id/kaget?c=sq6whsam3&r=kmecpM @${fill.price} USDC`);
+              bigorder.push(`🔥  <@everyone> Ada yang beli!${text_side} ${parseFloat(fill.size)} $BOP || tunggu pump baru beli 😂 <https://link.dana.id/kaget?c=sq6whsam3&r=kmecpM> @${fill.price} USDC`);
               arr_donepost.push(`${fill.orderId}`)
               console.log(fill.eventFlags)
             }
