@@ -28,6 +28,10 @@ client.on('ready', async () => {
     }
   }, 1000);
 
+    client.user.setActivity(`${ await getOrder()}`, {
+      type: "WATCHING"
+    });
+
 
 
 })
