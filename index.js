@@ -11,9 +11,9 @@ let channelid = "869334881140871188";
 
 let connection = new Connection('https://api.mainnet.rpcpool.com/');
 let programId = new PublicKey('9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin'); // Serum program v3
-let marketAddress = new PublicKey('7MmPwD1K56DthW14P1PnWZ4zPCbPWemGs3YggcT1KzsM'); //NINJA MARKET
+let marketAddress = new PublicKey('8x8jf7ikJwgP9UthadtiGFgfFuyyyYPHL3obJAuxFWko'); //NINJA MARKET
 
-let treshold = "1000";
+let treshold = "100";
 let arr_donepost = Array();
 
 
@@ -26,7 +26,7 @@ client.on('ready', async () => {
         // console.log(val)
         client.channels.cache.get(`${channelid}`).send(`${val}`)
     }
-  }, 1000);
+  }, 100);
 
     client.user.setActivity(`${ await getOrder()}`, {
       type: "WATCHING"
@@ -58,7 +58,7 @@ async function getTrade() {
               // NOthing here
             }else{
 
-              bigorder.push(`🔥 <!@Sad Boy> kapan beli bang! BO p aku❤️${text_side} ${parseFloat(fill.size)} $BOP || tunggu pump baru beli 😂  @${fill.price} USDC`);
+              bigorder.push(`🔥 Port Trade Alert${text_side} ${parseFloat(fill.size)} $PORT ||${fill.price} USDC`);
               arr_donepost.push(`${fill.orderId}`)
               console.log(fill.eventFlags)
             }
