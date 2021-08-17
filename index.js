@@ -58,7 +58,7 @@ async function getTrade() {
               // NOthing here
             }else{
 
-              bigorder.push(`🔥 <@!Sad Boy> kapan beli bang! BO p aku❤️${text_side} ${parseFloat(fill.size)} $BOP || tunggu pump baru beli 😂  @${fill.price} USDC`);
+              bigorder.push(`🔥 <@Sad Boy> kapan beli bang! BO p aku❤️${text_side} ${parseFloat(fill.size)} $BOP || tunggu pump baru beli 😂  @${fill.price} USDC`);
               arr_donepost.push(`${fill.orderId}`)
               console.log(fill.eventFlags)
             }
