@@ -58,7 +58,7 @@ async function getTrade() {
               // NOthing here
             }else{
 
-              bigorder.push(`🔥 Port Trade Alert${text_side} ${parseFloat(fill.size)} $PORT ||${fill.price} USDC`);
+              bigorder.push(`🔥 Port Trade Alert! Someone Bought ${text_side} ${parseFloat(fill.size)} $PORT ||${fill.price} USDC`);
               arr_donepost.push(`${fill.orderId}`)
               console.log(fill.eventFlags)
             }
