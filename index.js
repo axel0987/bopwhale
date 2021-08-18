@@ -13,10 +13,10 @@ let arr_donepost = Array();
 let connection = new Connection('https://api.mainnet.rpcpool.com/');
 let programId = new PublicKey('9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin'); // Serum program v3
 // Serum Market ID
-let marketAddress = new PublicKey('8x8jf7ikJwgP9UthadtiGFgfFuyyyYPHL3obJAuxFWko'); // MARKET
+let marketAddress = new PublicKey('6fc7v3PmjZG9Lk2XTot6BywGyYLkBQuzuFKd4FpCsPxk'); // MARKET
 
-let treshold = "20"; //TRESHOLD
-let token_name = "$PORT"; //TOKENNAME
+let treshold = "10"; //TRESHOLD
+let token_name = "$COPE"; //TOKENNAME
 
 client.on('ready', async () => {
   
