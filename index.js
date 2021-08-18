@@ -13,7 +13,7 @@ let connection = new Connection('https://api.mainnet.rpcpool.com/');
 let programId = new PublicKey('9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin'); // Serum program v3
 let marketAddress = new PublicKey('8x8jf7ikJwgP9UthadtiGFgfFuyyyYPHL3obJAuxFWko'); //NINJA MARKET
 
-let treshold = "60";
+let treshold = "4";
 let arr_donepost = Array();
 
 
