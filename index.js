@@ -5,18 +5,18 @@ const {Account, Connection, PublicKey} = require('@solana/web3.js');
 const {Market} = require('@project-serum/serum');
 
 // Discord bot ID
-client.login('BOT TOKEN'); // change here 
-let channelid = "822300897777287189";
+client.login(process.env.BOTID); // change here 
+let channelid = "877468623701147689";
 
 let arr_donepost = Array();
 
 let connection = new Connection('https://api.mainnet.rpcpool.com/');
 let programId = new PublicKey('9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin'); // Serum program v3
 // Serum Market ID
-let marketAddress = new PublicKey('MARKET ID'); // MARKET
+let marketAddress = new PublicKey('8x8jf7ikJwgP9UthadtiGFgfFuyyyYPHL3obJAuxFWko'); // MARKET
 
-let treshold = "0"; //TRESHOLD
-let token_name = "$TOKENNAME"; //TOKENNAME
+let treshold = "20"; //TRESHOLD
+let token_name = "$PORT"; //TOKENNAME
 
 client.on('ready', async () => {
   
@@ -54,7 +54,7 @@ async function getTrade() {
               // NOthing here
             }else{
               
-              bigorder.push(`🔥  Big Trade Alert! someone ${text_side} ${parseFloat(fill.size)} ${token_name} @${fill.price}`); 
+              bigorder.push(`🔥  Big Trade Alert! someone ${text_side} ${parseFloat(fill.size)} ${token_name} $${fill.price}`); 
               arr_donepost.push(`${fill.orderId}`)
               console.log(fill.feeCost) 
             }
