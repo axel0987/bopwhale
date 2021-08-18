@@ -54,7 +54,7 @@ async function getTrade() {
               // NOthing here
             }else{
               
-              bigorder.push(`🔥  Trade Alert! someone ${text_side} ${parseFloat(fill.size)} ${token_name} @$${fill.price.toFixed(7)}`); 
+              bigorder.push(`🔥  Trade Alert! someone ${text_side} ${parseFloat(fill.size)} ${token_name} @$${fill.price.toFixed(2)}`); 
               arr_donepost.push(`${fill.orderId}`)
               console.log(fill.feeCost) 
             }
