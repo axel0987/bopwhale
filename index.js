@@ -6,7 +6,7 @@ const {Market} = require('@project-serum/serum');
 
 // Discord bot ID
 client.login(process.env.BOTID); // change here 
-let channelid = "877468623701147689";
+let channelid = "869334881140871188";
 
 let arr_donepost = Array();
 
