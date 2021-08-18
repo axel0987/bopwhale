@@ -13,7 +13,7 @@ let connection = new Connection('https://api.mainnet.rpcpool.com/');
 let programId = new PublicKey('9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin'); // Serum program v3
 let marketAddress = new PublicKey('8x8jf7ikJwgP9UthadtiGFgfFuyyyYPHL3obJAuxFWko'); //NINJA MARKET
 
-let treshold = "10";
+let treshold = "50";
 let arr_donepost = Array();
 
 
@@ -26,7 +26,7 @@ client.on('ready', async () => {
         // console.log(val)
         client.channels.cache.get(`${channelid}`).send(`${val}`)
     }
-  }, 10);
+  }, 50);
 
     client.user.setActivity(`${ await getOrder()}`, {
       type: "WATCHING"
