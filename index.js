@@ -7,7 +7,7 @@ var fs = require('fs');
 
 // Discord bot ID
 client.login(process.env.BOTID); // change here
-let channelid = "869334881140871188";
+let channelid = "877468623701147689";
 
 let connection = new Connection('https://api.mainnet.rpcpool.com/');
 let programId = new PublicKey('9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin'); // Serum program v3
