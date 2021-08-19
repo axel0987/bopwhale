@@ -6,17 +6,17 @@ const {Market} = require('@project-serum/serum');
 
 // Discord bot ID
 client.login(process.env.BOTID); // change here 
-let channelid = "869334881140871188";
+let channelid = "848187371404918834";
 
 let arr_donepost = Array();
 
 let connection = new Connection('https://api.mainnet.rpcpool.com/');
 let programId = new PublicKey('9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin'); // Serum program v3
 // Serum Market ID
-let marketAddress = new PublicKey('6fc7v3PmjZG9Lk2XTot6BywGyYLkBQuzuFKd4FpCsPxk'); // MARKET
+let marketAddress = new PublicKey('7MmPwD1K56DthW14P1PnWZ4zPCbPWemGs3YggcT1KzsM'); // MARKET
 
-let treshold = "10"; //TRESHOLD
-let token_name = "$COPE"; //TOKENNAME
+let treshold = "6250"; //TRESHOLD
+let token_name = "$BOP"; //TOKENNAME
 
 client.on('ready', async () => {
   
@@ -54,7 +54,7 @@ async function getTrade() {
               // NOthing here
             }else{
               
-              bigorder.push(`🔥  Trade Alert! someone ${text_side} ${parseFloat(fill.size)} ${token_name} @$${fill.price.toFixed(2)}`); 
+              bigorder.push(`🔥  Trade Alert! someone ${text_side} ${parseFloat(fill.size)} ${token_name} @$${fill.price.toFixed(3)}`); 
               arr_donepost.push(`${fill.orderId}`)
               console.log(fill.feeCost) 
             }
