@@ -15,7 +15,7 @@ let programId = new PublicKey('9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin'); /
 // Serum Market ID
 let marketAddress = new PublicKey('7MmPwD1K56DthW14P1PnWZ4zPCbPWemGs3YggcT1KzsM'); // MARKET
 
-let treshold = "6250"; //TRESHOLD
+let treshold = "1000"; //TRESHOLD
 let token_name = "$BOP"; //TOKENNAME
 
 client.on('ready', async () => {
